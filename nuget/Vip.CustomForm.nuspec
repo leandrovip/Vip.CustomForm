@@ -5,11 +5,12 @@
     <version>1.0.0</version>
     <authors>Leandro Ferreira</authors>
     <owners>Leandro Ferreira</owners>
-    <description>A simple form customizable.</description>
+    <projectUrl>https://github.com/leandrovip/Vip.CustomForm</projectUrl>
+    <description>A simple form customizable for Windows Forms</description>
     <copyright>Copyright 2020</copyright>
-    <tags>vip custom form</tags>
+    <tags>vip custom form winforms</tags>
   </metadata>
   <files>
-        <file src="..\src\Vip.CustomForm\bin\Release\Vip.CustomForm.dll" target="lib\net48\Vip.CustomForm.dll"/>
-    </files>
+       <file src="..\src\Vip.CustomForm\bin\Release\Vip.CustomForm.dll" target="lib\net48\Vip.CustomForm.dll"/>
+  </files>
 </package>

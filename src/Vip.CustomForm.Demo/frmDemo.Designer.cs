@@ -37,7 +37,7 @@
             this.CaptionBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
             this.CaptionFont = new System.Drawing.Font("Century Gothic", 10F);
             this.CaptionForeColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1068, 554);
+            this.ClientSize = new System.Drawing.Size(488, 464);
             this.ForeColor = System.Drawing.Color.Black;
             this.InnerBorderVisibility = false;
             this.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
