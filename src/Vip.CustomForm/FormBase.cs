@@ -1065,6 +1065,13 @@ namespace Vip.CustomForm
             UpdateRegion();
         }
 
+        protected override void SetClientSizeCore(int x, int y)
+        {
+            int borderWidth = FrameLayout.BorderWidth;
+            Size = new Size(x + 2 * borderWidth, y + CaptionHeight + borderWidth);
+            UpdateBounds(Left, Top, x + 2 * borderWidth, y + CaptionHeight + borderWidth, x, y);
+        }
+
         protected override void OnLocationChanged(EventArgs e)
         {
             if (CustomizationApplied)
