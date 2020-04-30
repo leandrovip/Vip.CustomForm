@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vip.CustomForm", "Vip.CustomForm\Vip.CustomForm.csproj", "{563469A2-8414-4AE1-969D-E79127623A4A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vip.CustomForm.Demo", "Vip.CustomForm.Demo\Vip.CustomForm.Demo.csproj", "{CFDCD7EA-15EB-4339-9B1C-23C2E84FA407}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{563469A2-8414-4AE1-969D-E79127623A4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{563469A2-8414-4AE1-969D-E79127623A4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{563469A2-8414-4AE1-969D-E79127623A4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{563469A2-8414-4AE1-969D-E79127623A4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFDCD7EA-15EB-4339-9B1C-23C2E84FA407}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFDCD7EA-15EB-4339-9B1C-23C2E84FA407}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFDCD7EA-15EB-4339-9B1C-23C2E84FA407}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFDCD7EA-15EB-4339-9B1C-23C2E84FA407}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {75FA1A48-EE32-4AEC-9728-ED1ABF6DA22F}
+	EndGlobalSection
+EndGlobal
