@@ -28,7 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.btnSair = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // btnSair
+            // 
+            this.btnSair.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSair.Location = new System.Drawing.Point(366, 415);
+            this.btnSair.Name = "btnSair";
+            this.btnSair.Size = new System.Drawing.Size(110, 37);
+            this.btnSair.TabIndex = 0;
+            this.btnSair.Text = "Sair";
+            this.toolTip1.SetToolTip(this.btnSair, "Clique para sair 1");
+            this.btnSair.UseVisualStyleBackColor = true;
             // 
             // frmDemo
             // 
@@ -38,6 +50,7 @@
             this.CaptionFont = new System.Drawing.Font("Century Gothic", 10F);
             this.CaptionForeColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(488, 464);
+            this.Controls.Add(this.btnSair);
             this.ForeColor = System.Drawing.Color.Black;
             this.InnerBorderVisibility = false;
             this.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -48,5 +61,7 @@
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btnSair;
     }
 }

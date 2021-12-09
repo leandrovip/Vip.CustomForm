@@ -13,6 +13,8 @@ namespace Vip.CustomForm
     {
         private delegate IntPtr SendMessageDelegate(IntPtr hWnd, int msg, int wParam, int lParam);
 
+        public ToolTip toolTip1;
+
         #region Private Class
 
         private class FrameLayoutInfo
@@ -356,7 +358,7 @@ namespace Vip.CustomForm
 
         #endregion
 
-        #region Private Properties 
+        #region Private Properties
 
         private Rectangle IconBounds { get; set; }
 
@@ -1199,6 +1201,15 @@ namespace Vip.CustomForm
 
         public FormBase()
         {
+            toolTip1 = new ToolTip
+            {
+                AutomaticDelay = 500,
+                ShowAlways = true,
+                AutoPopDelay = 10000,
+                InitialDelay = 100,
+                ReshowDelay = 100
+            };
+
             CaptionLabels = new CaptionLabelCollection(this);
             BackColor = Color.White;
             CaptionAlign = HorizontalAlignment.Center;
