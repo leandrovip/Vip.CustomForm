@@ -49,17 +49,14 @@ jobs:
         run: |
           msbuild.exe .\src\Vip.CustomForm.sln /nologo /nr:false /p:platform="Any CPU" /p:configuration="Release"
 
-      - name: Nuget Add Source
-        run: nuget sources Add -Name "nuget" -Source https://api.nuget.org/v3/index.json
-
       - name: Nuget SetAPIKey
-        run: nuget setapikey ${{ secrets.NUGET_TOKEN }} -Source "nuget"
+        run: nuget setapikey ${{ secrets.NUGET_TOKEN }} -Source "nuget.org"
 
       - name: Generate pack Nuget
         run: nuget pack .\nuget\Vip.CustomForm.nuspec -Version ${{ steps.envs.outputs.VERSION_PACKAGE }}
         
       - name: Publish the package
-        run: nuget push .\nuget\*.nupkg -source "nuget" -SkipDuplicate
+        run: nuget push .\nuget\*.nupkg -source "nuget.org" -SkipDuplicate
     
 #      - name: Publish Package
 #        run: dotnet nuget push .\src\Vip.DFe\bin\Release\*.nupkg -s https://api.nuget.org/v3/index.json -k ${{ secrets.NUGET_TOKEN }}
