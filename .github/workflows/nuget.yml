@@ -53,7 +53,7 @@ jobs:
         run: nuget setapikey ${{ secrets.NUGET_TOKEN }} -Source "nuget.org"
 
       - name: Generate pack Nuget
-        run: nuget pack .\nuget\Vip.CustomForm.nuspec -Version ${{ steps.envs.outputs.VERSION_PACKAGE }}
+        run: nuget pack .\nuget\Vip.CustomForm.nuspec -Version ${{ steps.envs.outputs.VERSION_PACKAGE }} -OutputDirectory .\nuget\
         
       - name: Publish the package
         run: nuget push .\nuget\*.nupkg -source "nuget.org" -SkipDuplicate
